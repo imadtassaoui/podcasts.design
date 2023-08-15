@@ -1,10 +1,7 @@
 import Image from "next/image";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  return (
-    <main>
-      <Button type="secondary">Browse 100+ design podcasts</Button>
-    </main>
-  );
+  return <main></main>;
 }

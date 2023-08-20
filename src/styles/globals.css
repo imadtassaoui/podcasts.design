@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.dark-linear {
+  background: var(--black-10, #1b1918);
+}
+
+.orange-linear {
+  background: var(
+    --orange-linear,
+    linear-gradient(129deg, #f50 0%, #ff2b00 100%)
+  );
+}
+
+* {
+}
+
+@layer base {
+  body {
+    @apply text-dark-10 dark:text-light-90;
+  }
+
+  /* h1 {
+    @apply text-[64px] leading-[60px];
+  }
+
+  h2 {
+    @apply text-[40px];
+  } */
+
+  p {
+    @apply text-2xl text-dark-30 dark:text-light-80;
+  }
+}

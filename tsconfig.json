@@ -22,9 +22,13 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/styles/*": ["./src/styles/*"],
+      "@/sections/*": ["./src/sections/*"],
       "@/components/*": ["./src/components/*"],
       "@/ui/*": ["./src/components/ui/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/lib/*": ["./src/lib/*"],
+      "@/fonts/*": ["./src/fonts/*"],
+      "@/icons/*": ["./src/icons/*"],
+      "@/assets/*": ["./public/assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -1,9 +1,9 @@
 "use client";
 import { useTheme } from "next-themes";
 import { FC } from "react";
-import { DropdownMenu } from "./ui/DropdwonMenu";
+import { DropdownMenu } from "@/ui/DropdwonMenu";
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
-import Button from "./ui/Button";
+import Button from "@/ui/Button";
 import { Moon, Sun } from "lucide-react";
 
 interface ThemeToggleProps {}
@@ -13,10 +13,10 @@ const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="primary">
+        <Button variant="primary" className="flex flex-col gap-8">
           <Sun size={20} onClick={() => setTheme("light")} />
           <Moon size={20} onClick={() => setTheme("dark")} />
-          <span className="sr-only">Toggle theme</span>
+          {/* <span className="sr-only">Toggle theme</span> */}
         </Button>
       </DropdownMenuTrigger>
     </DropdownMenu>

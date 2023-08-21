@@ -40,9 +40,6 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Providers>
-
-        {/* allow more height on mobile devices */}
-        <div className="h-40 md:hidden" />
       </body>
     </html>
   );

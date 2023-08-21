@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import Hero from "@/components/Hero";
 import Selection from "@/components/Selection";
 import Footer from "@/components/Footer";
+import CallToAction from "@/components/CallToAction";
 
 export const metadata: Metadata = {
   title: "HomePage",
@@ -19,6 +20,7 @@ export default function Home() {
       </div>
       <Hero />
       <Selection />
+      <CallToAction />
       <Footer />
     </main>
   );

@@ -15,7 +15,7 @@ const Selection: FC = ({}) => {
   const keyword: string = "cherry-picked";
 
   return (
-    <section className="flex flex-col gap-8 px-4 py-8">
+    <section className="flex flex-col gap-16 px-4 py-8">
       <div className="flex flex-col gap-12 ">
         <div className="flex flex-col gap-6">
           <Headline variant="h2" heading={heading} keyword={keyword} />

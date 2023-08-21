@@ -17,6 +17,7 @@ interface HeadlineProps
     VariantProps<typeof healineVariants> {
   heading: Array<string>;
   keyword: string;
+  spanClass?: string;
 }
 
 const Headline: FC<HeadlineProps> = ({
@@ -24,6 +25,7 @@ const Headline: FC<HeadlineProps> = ({
   variant,
   heading,
   keyword,
+  spanClass,
 }) => {
   if (variant === "h1")
     return (
@@ -34,6 +36,7 @@ const Headline: FC<HeadlineProps> = ({
               variant={span === keyword ? "keyword" : null}
               size="h1"
               key={index}
+              className={spanClass && span === keyword ? spanClass : ""}
             >
               {span}
             </Span>
@@ -50,6 +53,7 @@ const Headline: FC<HeadlineProps> = ({
               variant={span === keyword ? "keyword" : null}
               size="h2"
               key={index}
+              className={spanClass && span === keyword ? spanClass : ""}
             >
               {span}
             </Span>

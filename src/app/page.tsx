@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ThemeToggle from "@/components/ThemeToggle";
 
 //components
-import Hero from "@/sections/Hero";
-import Selection from "@/sections/Selection";
-import Footer from "@/sections/Footer";
+import Hero from "@/components/Hero";
+import Selection from "@/components/Selection";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "HomePage",

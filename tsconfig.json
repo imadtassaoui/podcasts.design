@@ -22,7 +22,6 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/styles/*": ["./src/styles/*"],
-      "@/sections/*": ["./src/sections/*"],
       "@/components/*": ["./src/components/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/lib/*": ["./src/lib/*"],

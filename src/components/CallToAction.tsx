@@ -17,14 +17,14 @@ const CallToAction: FC<CallToActionProps> = ({}) => {
 
   return (
     <section className="flex overflow-hidden rounded-xl mx-4 my-8 flex-col gap-4 bg-dark-10 dark:bg-dark-15 md:flex-row  lg:mx-16 lg:justify-between">
-      <div className="flex flex-col gap-12 p-8 md:p-12 md:w-10/12 lg:p-16 lg:w-2/5">
+      <div className="flex flex-col gap-12 p-8 md:p-12 md:w-10/12 lg:p-16 lg:w-3/5">
         <div className="flex flex-col gap-6 ">
           <Headline
             variant="h2"
             heading={headline}
             keyword={keyword}
-            className="text-light-90"
-            spanClass="text-dark-10 dark:text-light-90"
+            className="text-light-90 "
+            spanClass="text-dark-10 dark:text-light-90 "
           />{" "}
           <p className="text-light-90">
             If you enjoy the content on this design podcasts library and find it
@@ -43,7 +43,7 @@ const CallToAction: FC<CallToActionProps> = ({}) => {
       <Image
         src={coffeeMobile}
         alt="coffee"
-        className="w-full md:w-auto md:h-full md:object-contain shadow-lg lg:w-1/2"
+        className="w-full md:w-auto md:h-full md:object-contain shadow-lg lg:w-2/5"
       />
     </section>
   );

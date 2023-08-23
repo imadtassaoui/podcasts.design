@@ -37,6 +37,9 @@ const config: Config = {
       fontFamily: {
         general: ["var(--font-general-sans)"],
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],

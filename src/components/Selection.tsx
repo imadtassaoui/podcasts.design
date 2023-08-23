@@ -27,11 +27,12 @@ const Selection: FC = ({}) => {
           </p>
         </div>
 
-        <Button variant="primary" label="Discover podcasts">
-          <Image src={coffee} alt="headphones icon" className="" />
-        </Button>
+        <Button variant="primary" label="Discover podcasts" icon="headphones" />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col w-full gap-4 md:flex-row  md:flex-wrap md:justify-center">
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />

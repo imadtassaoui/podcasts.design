@@ -2,6 +2,12 @@ import { VariantProps, cva } from "class-variance-authority";
 import { ButtonHTMLAttributes, HTMLAttributes, forwardRef } from "react";
 import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
+import Image from "next/image";
+
+//icons
+import headphones from "@/icons/headphones.svg";
+import coffee from "@/icons/coffee.svg";
+import Icon from "@/icons/Icon";
 
 export const buttonVariants = cva(
   "p-4 self-start w-auto text-5 text rounded-xl text-xl transition-colors ease-in duration-400 flex items-center justify-center gap-2",
@@ -25,10 +31,24 @@ interface ButtonProps
     VariantProps<typeof buttonVariants> {
   isLoading?: boolean;
   label?: string;
+  icon?: string;
+  iconColor?: string;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, isLoading, label, children, ...props }, ref) => {
+  (
+    {
+      className,
+      variant,
+      isLoading,
+      label,
+      icon,
+      iconColor,
+      children,
+      ...props
+    },
+    ref
+  ) => {
     return (
       <button
         ref={ref}
@@ -36,9 +56,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, className }))}
         disabled={isLoading}
       >
-        {children}
+        {icon === "headphones" ? (
+          <Icon icon={icon} color={iconColor ? iconColor : ""} />
+        ) : icon === "coffee" ? (
+          <Icon icon={icon} color={iconColor ? iconColor : ""} />
+        ) : null}
         <label>{label}</label>
-        {isLoading ? <Loader2 className="" /> : null}
+        {/* {isLoading ? <Loader2 className="" /> : null} */}
       </button>
     );
   }

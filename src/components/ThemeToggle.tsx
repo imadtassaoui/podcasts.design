@@ -9,15 +9,18 @@ import { Moon, Sun } from "lucide-react";
 interface ThemeToggleProps {}
 
 const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="primary" className="flex flex-col gap-8">
-          <Sun size={20} onClick={() => setTheme("light")} />
-          <Moon size={20} onClick={() => setTheme("dark")} />
+        <div className="flex flex-col gap-8">
+          {theme === "dark" ? (
+            <Sun size={60} onClick={() => setTheme("light")} />
+          ) : theme === "light" ? (
+            <Moon size={60} onClick={() => setTheme("dark")} />
+          ) : null}
           {/* <span className="sr-only">Toggle theme</span> */}
-        </Button>
+        </div>
       </DropdownMenuTrigger>
     </DropdownMenu>
   );

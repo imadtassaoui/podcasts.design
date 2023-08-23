@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 
 //icons
-import coffee from "@/icons/coffee.svg";
+import coffee from "@/icons/Coffee.svg";
 //assets
 import heroImageMobile from "@/assets/hero-image-mobile.png";
 import Headline from "@/components/ui/Headline";
@@ -23,12 +23,8 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button label="Discover+" variant="primary">
-            <Image className="" src={coffee} alt="icon" />
-          </Button>
-          <Button label="Support us" variant="secondary">
-            <Image src={coffee} alt="icon" />
-          </Button>
+          <Button label="Discover+" variant="primary" icon="headphones" />
+          <Button label="Support us" variant="secondary" icon="coffee" />
         </div>
       </div>
 

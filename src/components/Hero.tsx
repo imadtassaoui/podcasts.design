@@ -4,7 +4,7 @@ import Image from "next/image";
 //icons
 import coffee from "@/icons/Coffee.svg";
 //assets
-import heroImageMobile from "@/assets/hero-image-mobile.png";
+import heroImageMobile from "@/assets/hero-image-desk.png";
 import Headline from "@/components/ui/Headline";
 
 const Hero = () => {
@@ -12,8 +12,8 @@ const Hero = () => {
   const h1Keyword: string = "Most loved";
 
   return (
-    <section className="flex flex-col gap-8 py-16 w-full">
-      <div className="flex flex-col gap-16 px-4 ">
+    <section className="flex flex-col gap-8 py-16 w-full lg:flex-row lg:items-center lg:px-16 lg:justify-between lg:py-24 lg:pt-12">
+      <div className="flex flex-col gap-12 px-4 lg:px-0  lg:w-2/5">
         <div className="flex flex-col gap-8 ">
           <Headline variant="h1" heading={h1} keyword={h1Keyword} />
           <p>
@@ -28,7 +28,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image src={heroImageMobile} alt="hero image" className="w-full" />
+      <Image
+        src={heroImageMobile}
+        alt="hero image"
+        className="w-full lg:w-3/5 "
+      />
     </section>
   );
 };

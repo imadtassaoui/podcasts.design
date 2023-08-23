@@ -15,8 +15,8 @@ const Selection: FC = ({}) => {
   const keyword: string = "cherry-picked";
 
   return (
-    <section className="flex flex-col gap-16 px-4 py-8">
-      <div className="flex flex-col gap-12 ">
+    <section className="flex flex-col gap-16 px-4 py-8 lg:px-16 lg:flex-row lg:justify-between lg:py-24 lg:items-center">
+      <div className="flex flex-col gap-12 lg:w-1/2">
         <div className="flex flex-col gap-6">
           <Headline variant="h2" heading={heading} keyword={keyword} />
           <p>
@@ -29,7 +29,7 @@ const Selection: FC = ({}) => {
 
         <Button variant="primary" label="Discover podcasts" icon="headphones" />
       </div>
-      <div className="flex flex-col w-full gap-4 md:flex-row  md:flex-wrap md:justify-center">
+      <div className="flex flex-col w-full gap-4 md:flex-row  md:flex-wrap md:justify-end">
         <Card />
         <Card />
         <Card />

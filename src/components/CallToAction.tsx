@@ -6,7 +6,7 @@ import Headline from "./ui/Headline";
 import Button from "./ui/Button";
 
 //assets
-import coffeeMobile from "@/assets/coffee-tablet.png";
+import coffeeMobile from "@/assets/coffee-desk.png";
 
 interface CallToActionProps {}
 
@@ -16,9 +16,9 @@ const CallToAction: FC<CallToActionProps> = ({}) => {
   const keyword: string = "a coffee,";
 
   return (
-    <section className="flex overflow-hidden rounded-xl mx-4 my-8 flex-col gap-4  bg-dark-10 dark:bg-dark-15 md:flex-row">
-      <div className="flex flex-col gap-12 p-8 md:p-12 md:w-10/12">
-        <div className="flex flex-col gap-6">
+    <section className="flex overflow-hidden rounded-xl mx-4 my-8 flex-col gap-4 bg-dark-10 dark:bg-dark-15 md:flex-row  lg:mx-16 lg:justify-between">
+      <div className="flex flex-col gap-12 p-8 md:p-12 md:w-10/12 lg:p-16 lg:w-2/5">
+        <div className="flex flex-col gap-6 ">
           <Headline
             variant="h2"
             heading={headline}
@@ -43,7 +43,7 @@ const CallToAction: FC<CallToActionProps> = ({}) => {
       <Image
         src={coffeeMobile}
         alt="coffee"
-        className="w-full md:w-auto md:h-full md:object-contain shadow-lg"
+        className="w-full md:w-auto md:h-full md:object-contain shadow-lg lg:w-1/2"
       />
     </section>
   );

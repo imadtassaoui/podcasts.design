@@ -18,6 +18,7 @@ export const buttonVariants = cva(
           "bg-dark-10 text-light-90 dark:bg-light-90 dark:text-dark-10 dark:hover:bg-light-85",
         secondary:
           "bg-light-85 text-dark-10 hover:bg-light-80 dark:bg-dark-20 dark:text-light-90 dark:hover:bg-dark-30",
+        link: "py-2 px-3 rounded-xl text-dark-10 text-base bg-light-85 hover:bg-light-80 dark:text-light-90 dark:bg-dark-20 dark:hover:bg-dark-30 ",
       },
     },
     defaultVariants: {

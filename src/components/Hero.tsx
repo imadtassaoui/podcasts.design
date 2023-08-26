@@ -6,6 +6,7 @@ import coffee from "@/icons/Coffee.svg";
 //assets
 import heroImageMobile from "@/assets/hero-image-desk.png";
 import Headline from "@/components/ui/Headline";
+import Link from "next/link";
 
 const Hero = () => {
   const h1: Array<string> = "Most loved+design+podcasts+library+.".split("+");
@@ -23,8 +24,15 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button label="Discover+" variant="primary" icon="headphones" />
-          <Button label="Support us" variant="secondary" icon="coffee" />
+          <Link href="/browse">
+            <Button label="Discover+" variant="primary" icon="headphones" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.buymeacoffee.com/podcasts.design"
+          >
+            <Button label="Support us" variant="secondary" icon="coffee" />
+          </Link>
         </div>
       </div>
 

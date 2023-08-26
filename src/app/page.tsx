@@ -15,9 +15,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="">
-      <div className="fixed bottom-0 left-0">
-        <ThemeToggle />
-      </div>
       <Hero />
       <Selection />
       <CallToAction />

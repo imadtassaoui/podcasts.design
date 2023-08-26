@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
+import ThemeToggle from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -38,6 +39,10 @@ export default function RootLayout({
       <body className={"w-full min-h-screen bg-light-90 dark:bg-dark-10"}>
         <Providers>
           <Navbar />
+          <div className="fixed bottom-0 left-0">
+            <ThemeToggle />
+          </div>
+
           {children}
         </Providers>
       </body>

@@ -6,7 +6,8 @@ import Headline from "./ui/Headline";
 import Button from "./ui/Button";
 
 //assets
-import coffeeMobile from "@/assets/coffee-desk.png";
+import coffeeMobile from "@/assets/coffee-tablet.png";
+import Link from "next/link";
 
 interface CallToActionProps {}
 
@@ -32,13 +33,18 @@ const CallToAction: FC<CallToActionProps> = ({}) => {
             Thanks a latte!
           </p>
         </div>
-        <Button
-          variant="primary"
-          label="Buy us a coffee"
-          icon="coffee"
-          iconColor="#1B1918"
-          className="text-dark-10 bg-light-85 dark:bg-light-85 hover:bg-light-80 hover:dark:bg-light-80"
-        />
+        <Link
+          target="_blank"
+          href="https://www.buymeacoffee.com/podcasts.design"
+        >
+          <Button
+            variant="primary"
+            label="Buy us a coffee"
+            icon="coffee"
+            iconColor="#1B1918"
+            className="text-dark-10  bg-light-85 dark:bg-light-85 hover:bg-light-80 hover:dark:bg-light-80"
+          />
+        </Link>
       </div>
       <Image
         src={coffeeMobile}

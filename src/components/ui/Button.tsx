@@ -10,7 +10,7 @@ import coffee from "@/icons/coffee.svg";
 import Icon from "@/icons/Icon";
 
 export const buttonVariants = cva(
-  "p-4 self-start w-auto text-5 text rounded-xl text-xl transition-colors ease-in duration-400 flex items-center justify-center gap-2",
+  "p-4 cursor-pointer self-start w-auto text-5 text rounded-xl text-xl transition-colors ease-in duration-400 flex items-center justify-center gap-2",
   {
     variants: {
       variant: {
@@ -62,7 +62,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ) : icon === "coffee" ? (
           <Icon icon={icon} color={iconColor ? iconColor : ""} />
         ) : null}
-        <label>{label}</label>
+        <label className="cursor-pointer">{label}</label>
         {/* {isLoading ? <Loader2 className="" /> : null} */}
       </button>
     );

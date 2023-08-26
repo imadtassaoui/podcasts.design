@@ -7,6 +7,7 @@ import { FC } from "react";
 import coffee from "@/icons/coffee.svg";
 import Card from "@/components/ui/Card";
 import Headline from "@/components/ui/Headline";
+import Link from "next/link";
 
 const Selection: FC = ({}) => {
   const heading: Array<string> = "Browse+cherry-picked+design+podcasts+.".split(
@@ -26,8 +27,13 @@ const Selection: FC = ({}) => {
             cherry-picked design podcasts. Happy listening!
           </p>
         </div>
-
-        <Button variant="primary" label="Discover podcasts" icon="headphones" />
+        <Link href="/browse">
+          <Button
+            variant="primary"
+            label="Discover podcasts"
+            icon="headphones"
+          />
+        </Link>
       </div>
       <div className="flex flex-col w-full gap-4 md:flex-row  md:flex-wrap md:justify-end">
         <Card />

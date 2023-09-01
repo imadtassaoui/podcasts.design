@@ -8,18 +8,21 @@ import localFont from "next/font/local";
 
 const generalsans = localFont({
   src: [
-    // {
-    //   path: "../fonts/GeneralSans-Regular.otf",
-    //   style: "normal",
-    // },
+    {
+      path: "../fonts/GeneralSans-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
     {
       path: "../fonts/GeneralSans-Medium.otf",
-      style: "medium",
+      weight: "500",
+      style: "normal",
     },
-    // {
-    //   path: "../fonts/GeneralSans-Bold.otf",
-    //   style: "bold",
-    // },
+    {
+      path: "../fonts/GeneralSans-Bold.otf",
+      weight: "600",
+      style: "normal",
+    },
   ],
   variable: "--font-general-sans",
 });
@@ -36,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cn(generalsans.className, "font-medium")}>
-      <body className={"w-full min-h-screen bg-light-90 dark:bg-dark-10"}>
+      <body className={"w-full min-h-screen bg-light-90 dark:bg-dark-10 "}>
         <Providers>
           <Navbar />
           <div className="fixed bottom-0 left-0">

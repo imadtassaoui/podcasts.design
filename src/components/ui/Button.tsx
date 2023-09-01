@@ -63,7 +63,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           <Icon icon={icon} color={iconColor ? iconColor : ""} />
         ) : null}
         <label className="cursor-pointer">{label}</label>
-        {/* {isLoading ? <Loader2 className="" /> : null} */}
+        {isLoading ? <Loader2 className="" /> : null}
       </button>
     );
   }

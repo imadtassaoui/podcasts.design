@@ -1,12 +1,15 @@
+import * as React from "react";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Headline from "@/components/ui/Headline";
+import Link from "next/link";
 
 //icons
 import coffee from "@/icons/Coffee.svg";
 //assets
-import heroImageMobile from "@/assets/hero-image-desk.png";
-import Headline from "@/components/ui/Headline";
-import Link from "next/link";
+import heroImageMobile from "@/assets/hero-image-mobile.png";
+import heroImageTablet from "@/assets/hero-image-tablet.png";
+import heroImageDesk from "@/assets/hero-image-desk.png";
 
 const Hero = () => {
   const h1: Array<string> = "Most loved+design+podcasts+library+.".split("+");
@@ -35,6 +38,25 @@ const Hero = () => {
           </Link>
         </div>
       </div>
+      {/* {window.innerWidth <= 640 ? (
+        <Image
+          src={heroImageMobile}
+          alt="hero image"
+          className="w-full lg:w-3/5 "
+        />
+      ) : window.innerWidth <= 768 ? (
+        <Image
+          src={heroImageTablet}
+          alt="hero image"
+          className="w-full lg:w-3/5 "
+        />
+      ) : window.innerWidth <= 1024 ? (
+        <Image
+          src={heroImageDesk}
+          alt="hero image"
+          className="w-full lg:w-3/5 "
+        />
+      ) : null} */}
 
       <Image
         src={heroImageMobile}

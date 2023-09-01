@@ -6,7 +6,7 @@ import Headline from "./ui/Headline";
 import Button from "./ui/Button";
 
 //assets
-import coffeeMobile from "@/assets/coffee-tablet.png";
+import coffeeMobile from "@/assets/coffee-mobile.png";
 import Link from "next/link";
 
 interface CallToActionProps {}

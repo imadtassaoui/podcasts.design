@@ -57,6 +57,6 @@ body {
   } */
 
   p {
-    @apply text-2xl text-dark-30 dark:text-light-80;
+    @apply text-2xl font-normal text-dark-30 dark:text-light-80;
   }
 }

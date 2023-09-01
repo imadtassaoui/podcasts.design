@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 const healineVariants = cva("flex flex-wrap", {
   variants: {
     variant: {
-      h1: "text-[64px] leading-[60px]",
-      h2: "text-[40px]",
+      h1: "text-[64px] leading-[60px] ",
+      h2: "text-[40px] ",
     },
   },
 });

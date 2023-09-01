@@ -37,7 +37,7 @@ const Card: FC<cardsProps> = ({}) => {
           className="w-full rounded-lg shadow-xl"
         />
         <div className="flex flex-col px-2 gap-1 w-3/5">
-          <h3 className="text-xl  ">NN/g UX Podcast</h3>
+          <h3 className="text-xl  font-bold">NN/g UX Podcast</h3>
           <p className="text-xl  ">Nielsen Norman Group</p>
         </div>
       </div>
